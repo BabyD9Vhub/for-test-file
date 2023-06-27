@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer.jsx';
 import Page_button from './page_button';
 import { useState } from 'react';
-
+import PrimeNumber from './PrimeNumber';
 function App() {
   const [num, setNum] = useState(0);  
   return (
@@ -14,8 +14,10 @@ function App() {
         <button onClick={()=>setNum(num+1)}>เพิ่ม</button>
         <button onClick={()=>setNum(num-1)}>ลด</button>
       </div>
+     
       <Page_button/>
       <Footer />
+      <PrimeNumber/>
     </div>
   );
 }
